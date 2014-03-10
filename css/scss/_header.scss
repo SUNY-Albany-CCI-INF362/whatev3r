@@ -1,0 +1,13 @@
+header{
+	background-color: $primary-color;
+	box-shadow: $light-shadow;
+	text-align: center;
+
+	& a {
+		color: white;
+		text-decoration: none;
+		&:hover, &:active, &:visited {
+			color: $link-color;
+		}
+	}
+}
