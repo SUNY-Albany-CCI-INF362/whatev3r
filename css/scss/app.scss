@@ -1,61 +1,22 @@
+ @import "foundation.min";  // foundation 5
+ @import "normalize";
+ @import "constant";
+ @import "header";
+ @import "home-nav";
+ @import "footer";
+
 body{
 	background: {
 		image:url('http://i.cubeupload.com/uP5cjy.jpg');
 		repeat:repeat;
 	}
 }
-header{
-	background-color: rgb(229, 109, 109);
-	box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.9);
-	text-align: center;
-
-	& a {
-		color: white;
-		text-decoration: none;
-		&:hover, &:active, &:visited {
-			color: #d3d3d3;
-		}
-	}
-}
-
-
-/*This controls the properties on the four navigation buttons.*/
-.nav-button{    
-     
-        a:link, a:visited{
-            display:block;
-            width:90%;
-            min-height: 2.5em;
-            font-weight:bold;
-            color:black;
-            background-color:#B2D64F;
-            text-align:center;
-            padding:0.05em;
-            text-decoration:none;
-            border-style: solid;
-            border-color:#B2d64f;
-
-        }
-        a:hover, a:active{
-            background-color:#B4D35F;
-            border-style: solid;
-            border-color:white;
-       } 
-    
-}
 
 .container .row {  // used http://cssround.com/
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	background:rgba(227,162,11,0.3);
+	background:$secondary-color;
 
-}
-footer {
-	text-align: center;
-	-webkit-border-radius: 0px 0px 0.938em 1.063em;
-	-moz-border-radius: 0px 0px 0.938em 1.063em;
-	border-radius: 0px 0px 0.938em 1.063em;
-	background:rgba(227,162,11,0.3);
 }
 

@@ -1,0 +1,24 @@
+/*This controls the properties on the four navigation buttons.*/
+.nav-button{    
+     
+        a:link, a:visited{
+            display:block;
+            width:90%;
+            min-height: 2.5em;
+            font-weight:bold;
+            color:black;
+            background-color:$tertiary-color;
+            text-align:center;
+            padding:0.05em;
+            text-decoration:none;
+            border-style: solid;
+            border-color:$border-color;
+
+        }
+        a:hover, a:active{
+            background-color:$tertiary-color;
+            border-style: solid;
+            border-color:white;
+       } 
+    
+}
