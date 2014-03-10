@@ -1,3 +1,13 @@
+ /*
+	Created an app.scss only contains styles applied to the body and imports everything else. 
+	For future styling please use import.
+
+	For Example, if you wanted to apply styles to the footer,
+	 create a file called _footer.scss and put your styles in it. 
+	 Then below type @import "footer". 
+
+ */
+
  @import "foundation.min";  // foundation 5
  @import "normalize";
  @import "constant";
