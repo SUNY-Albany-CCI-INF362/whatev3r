@@ -1,4 +1,4 @@
-header{
+header, .top-bar{
 	background-color: $primary-color;
 	box-shadow: $light-shadow;
 	text-align: center;
@@ -10,4 +10,16 @@ header{
 			color: $link-color;
 		}
 	}
+}
+
+.toggle-topbar, .top-bar-section, .right, .has-dropdown, .bg-color{
+	background: $primary-color;
+}
+
+.expanded{
+	background: $primary-color;
+}
+
+.top-bar.expanded .title-area {
+background: #e56d6d;
 }
