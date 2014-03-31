@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="../css/foundation.css">
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/app.css" />
+        <script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
+    
         <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -50,7 +52,9 @@
         <div class="row">
             <br>
           <div class="small-12 columns">
-              <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Agemj7XmJRHMdFRXV3ItOVNfaDVCeDFwQVJULThRQ0E&font=Bevan-PotanoSans&maptype=toner&lang=en&hash_bookmark=true&height=650' width='100%' height='650' frameborder='0'></iframe>
+            <div id="my-timeline"></div>
+
+             <!--  <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Agemj7XmJRHMdFRXV3ItOVNfaDVCeDFwQVJULThRQ0E&font=Bevan-PotanoSans&maptype=toner&lang=en&hash_bookmark=true&height=650' width='100%' height='650' frameborder='0'></iframe> -->
           </div>
         </div>
         <!--Intro Text-->
@@ -77,6 +81,18 @@
         <script>
          $(document).foundation();
         </script>
+        <script>
+      $(document).ready(function() {
+        createStoryJS({
+          type:   'timeline',
+          // width:    '800',
+          start_zoom_adjust:    '4',
+          height:   '600',
+          source:   'https://docs.google.com/spreadsheet/ccc?key=0Agemj7XmJRHMdFRXV3ItOVNfaDVCeDFwQVJULThRQ0E&usp=sharing',
+          embed_id: 'my-timeline'
+        });
+      });
+    </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
