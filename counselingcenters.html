@@ -51,78 +51,7 @@
         <!--Counseling Center Information-->
         <div class="row">
         <div class="small-12 columns">
-        <h2>Find non-profit counseling centers in your area<h2>
-        <h3>Select your county:</h3>
-        <div class="row">
-        <div class="small-12 columns">
-        <td style="padding:.8em;"><select class="county_menu" name="selectedDistrict" tabindex="63" id="districtSelect">
-    <option value=""
-    >-- Please Select One --</option>
-    <option value="01">Albany</option>
-    <option value="02">Allegany</option>
-    <option value="03">Bronx</option>
-    <option value="04">Broome</option>
-    <option value="05">Cattaraugus</option>
-    <option value="06">Cayuga</option>
-    <option value="07">Chautauqua</option>
-    <option value="08">Chemung</option>
-    <option value="09">Chenango</option>
-    <option value="10">Clinton</option>
-    <option value="11">Columbia</option>
-    <option value="12">Cortland</option>
-    <option value="13">Delaware</option>
-    <option value="14">Dutchess</option>
-    <option value="15">Erie</option>
-    <option value="16">Essex</option>
-    <option value="17">Franklin</option>
-    <option value="18">Fulton</option>
-    <option value="19">Genesee</option>
-    <option value="20">Greene</option>
-    <option value="21">Hamilton</option>
-    <option value="22">Herkimer</option>
-    <option value="23">Jefferson</option>
-    <option value="24">Kings (Brooklyn)</option>
-    <option value="25">Lewis</option>
-    <option value="26">Livingston</option>
-    <option value="27">Madison</option>
-    <option value="28">Monroe</option>
-    <option value="29">Montgomery</option>
-    <option value="30">Nassau</option>
-    <option value="31">New York (Manhattan)</option>
-    <option value="32">Niagara</option>
-    <option value="33">Oneida</option>
-    <option value="34">Onondaga</option>
-    <option value="35">Ontario</option>
-    <option value="36">Orange</option>
-    <option value="37">Orleans</option>
-    <option value="38">Oswego</option>
-    <option value="39">Otsego</option>
-    <option value="40">Putnam</option>
-    <option value="41">Queens</option>
-    <option value="42">Rensselaer</option>
-    <option value="43">Richmond (Staten Island)</option>
-    <option value="44">Rockland</option>
-    <option value="45">St. Lawrence</option>
-    <option value="46">Saratoga</option>
-    <option value="47">Schenectady</option>
-    <option value="48">Schoharie</option>
-    <option value="49">Schuyler</option>
-    <option value="50">Seneca</option>
-    <option value="51">Steuben</option>
-    <option value="52">Suffolk</option>
-    <option value="53">Sullivan</option>
-    <option value="54">Tioga</option>
-    <option value="55">Tompkins</option>
-    <option value="56">Ulster</option>
-    <option value="57">Warren</option>
-    <option value="58">Washington</option>
-    <option value="59">Wayne</option>
-    <option value="60">Westchester</option>
-    <option value="61">Wyoming</option>
-    <option value="62">Yates</option>
-    
 
-</select>
 </td>
 
 <table>
@@ -144,6 +73,8 @@
     </table>
         <script src="jquery.js"></script>
         <script>
+var conceptName = $('#aioConceptName').find(":selected").text();
+
             $('.agency_table tr').each(function(){
                 var county = $(this).find(".county").html();
                 var agency = $(this).find("agency").html();
