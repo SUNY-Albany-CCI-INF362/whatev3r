@@ -2378,8 +2378,7 @@ footer {
   -webkit-border-radius: 0px 0px 0.938em 1.063em;
   -moz-border-radius: 0px 0px 0.938em 1.063em;
   border-radius: 0px 0px 0.938em 1.063em;
-  background: cornsilk;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  background: rgba(227, 162, 11, 0.3);
 }
 
 /*This controls the properties on the four navigation buttons.*/
@@ -2392,17 +2391,17 @@ footer {
   min-height: 2.5em;
   font-weight: bold;
   color: black;
-  background-color: #3aa6d0;
+  background-color: #b2d64f;
   text-align: center;
   padding: 0.05em;
   text-decoration: none;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  border-radius: 7px;
+  border-style: solid;
+  border-color: #b2d64f;
 }
 .nav-button a:hover, .nav-button a:active {
-  background-color: #3aa6d0;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  border-radius: 7px;
+  background-color: #b2d64f;
+  border-style: solid;
+  border-color: white;
 }
 
 header, .top-bar {
@@ -2431,7 +2430,7 @@ header a:hover, header a:active, header a:visited, .top-bar a:hover, .top-bar a:
 }
 
 body {
-  background-color: rgba(58, 166, 208, 0.4);
+  background-background-color: rgba(58, 166, 208, 0.4);
 }
 
 .container .row {
@@ -2439,9 +2438,4 @@ body {
   -moz-border-radius: 0px;
   border-radius: 0px;
   background-color: rgba(255, 255, 255, 0.61);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.ontop {
-  z-index: 101;
 }

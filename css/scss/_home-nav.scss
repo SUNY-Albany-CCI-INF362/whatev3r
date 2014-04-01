@@ -2,6 +2,7 @@
 .nav-button{    
      
      padding: 1em; 
+    
      
         a:link, a:visited{
             display:block;
@@ -13,14 +14,20 @@
             text-align:center;
             padding:0.05em;
             text-decoration:none;
-            border-style: solid;
-            border-color:$border-color;
+            // border-style: solid;
+            // border-color:$border-color;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            border-radius: 7px;
+
 
         }
         a:hover, a:active{
             background-color:$tertiary-color;
-            border-style: solid;
-            border-color:white;
+            // border-style: solid;
+            // border-color:white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            border-radius: 7px;
+
        } 
     
 }
