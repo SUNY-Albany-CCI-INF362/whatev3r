@@ -2430,13 +2430,12 @@ header a:hover, header a:active, header a:visited, .top-bar a:hover, .top-bar a:
 }
 
 body {
-  background-image: url("http://i.cubeupload.com/uP5cjy.jpg");
-  background-repeat: repeat;
+  background-background-color: rgba(58, 166, 208, 0.4);
 }
 
 .container .row {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  background: rgba(227, 162, 11, 0.3);
+  background-color: rgba(255, 255, 255, 0.61);
 }
