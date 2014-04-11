@@ -131,14 +131,14 @@
     
 
 </select>
-        <table class="agency_table tr">
+        <table class="agency_table tr" width="100%">
           
           <tr class="headers">
-            <th class="w10">COUNTY</th>
+            <th> </th>
             <th class="w25">AGENCY</th>
             <th class="w25">ADDRESS</th>
             <th class="w20">CONTACT INFO</th>
-            <th class="w20">NOTES</th>
+            <th class="rt-p2">NOTES</th>
           </tr>
           <tr class="albany">
             <th rowspan="5" class="county">Albany</th>
@@ -1573,11 +1573,17 @@
         <!--Footer ends-->
         
 
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/foundation.min.js"></script>
+        <script src="js/app/responsive-table.min.js">
+        $('table').responsiveTable();
+
+        </script>
+        <script src="/js/foundation/foundation.dropdown.min.js"></script>
 
 <script>
 $(document).foundation();
