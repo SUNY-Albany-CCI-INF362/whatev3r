@@ -5539,6 +5539,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
                 VMM.Lib.css(".slider-item .layout-text-media .media", "float", "left" );
                 //VMM.Lib.css(".slider-item .layout-text-media", "display", "table" );
                 
+                
                 VMM.Lib.css(".slider-item .media blockquote p", "line-height", "36px" );
                 VMM.Lib.css(".slider-item .media blockquote p", "font-size", "28px" );
                 
