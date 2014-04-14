@@ -1032,6 +1032,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Browser == 'undefined') {
 			} else {
 				device = "desktop";
 			}
+			device = "desktop"
+			
 			return device;
 		},
 		searchString: function (data) {
@@ -5825,7 +5827,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			
 			/* MAKE SLIDER DRAGGABLE/TOUCHABLE
 			================================================== */
-			
+			/*
 			if (VMM.Browser.device == "tablet" || VMM.Browser.device == "mobile") {
 				// Different Animation duration for touch
 				config.duration = 500;
@@ -5843,7 +5845,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 				VMM.bindEvent($explainer, onExplainerClick);
 				VMM.bindEvent($explainer, onExplainerClick, 'touchend');
 			}
-			
+			*/
 			reSize(false, true);
 			
 			
