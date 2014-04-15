@@ -3,108 +3,115 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Foreclosure Timeline</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Foreclosure Timeline</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="../css/foundation.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/app.css" />
-        <script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="../css/foundation.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/app.css" />
+  <script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
+  
+  <script src="../js/vendor/modernizr-2.6.2.min.js"></script> 
+</head>
+<body>
+  
+  <div class="row">
     
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script> 
-    </head>
-    <body>
-        
-        <div class="row">
-            
-            <nav class="top-bar header ontop" data-topbar>
-              <ul class="title-area">
-                <li class="name">
-                  <h1><a href="../index.html">Foreclosure Guide</a></h1>
-              </li>
-              <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-          </ul>
+    <nav class="top-bar header ontop" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="../index.html">Foreclosure Guide</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
 
-          <section class="top-bar-section">
-                <!-- Right Nav Section -->
-                <ul class="right">
-                  <li class="has-dropdown">
-                    <a class = "bg-color" href="#">Menu</a>
-                    <ul class="dropdown">
-                      <li><a href="../index.html">Home</a></li>
-                      <li class="active" ><a href="generaltimeline.html">Foreclosure Timeline</a></li>
-                      <li><a href="../counselingcenterstable.html">Need Help?</a></li>
-                      <li><a href="../Foreclosure_terms.html">Important Terms</a></li>
-                    </ul>
-              </li>
-          </ul>
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="has-dropdown">
+            <a class = "bg-color" href="#">Menu</a>
+            <ul class="dropdown">
+              <li><a href="../index.html">Home</a></li>
+              <li class="active" ><a href="generaltimeline.html">Foreclosure Timeline</a></li>
+              <li><a href="../counselingcenterstable.html">Need Help?</a></li>
+              <li><a href="../Foreclosure_terms.html">Important Terms</a></li>
+            </ul>
+          </li>
+        </ul>
       </section>
     </nav>
-        </div>
-        
-        <div class = "container">
-        <!--Intro Text-->
-        <div class="row">
-            <br>
-          <div class="small-12 columns">
-            <div id="my-timeline"></div>
-          </div>
-        </div>
-        <!--Intro Text-->
+  </div>
+  
+  <div class = "container">
+    <!--Intro Text-->
+
+    <div class="row">
+      <br>
+      <div id="my-timeline"></div>
+      <div class="small-12 columns">
 
         
 
-        <!--Footer start-->
+      </div>
+    </div>
+  </div>
+  <!--Intro Text-->
 
-        <footer class="row">
-            <hr>
-          <div class="small-12 columns">
-             <p>Sponsored by the <a href="//www.empirejustice.org/">Empire Justice Center</a>. &copy; 2014 This website is for general information only and should not be used as formal legal advice. 
-                </p>
-          </div>
-        </footer>
-        <!--Footer ends-->
-        
+  
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-        <script src="../js/foundation.min.js"></script>
-        <script>
-         $(document).foundation();
-        </script>
-        <script>
-      $(document).ready(function() {
-        createStoryJS({
-          type:   'timeline',
+  <!--Footer start-->
+
+  <footer class="row">
+    <hr>
+    <div class="small-12 columns">
+     <p>Sponsored by the <a href="//www.empirejustice.org/">Empire Justice Center</a>. &copy; 2014 This website is for general information only and should not be used as formal legal advice. 
+     </p>
+   </div>
+ </footer>
+ <!--Footer ends-->
+ 
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+ <script src="../js/plugins.js"></script>
+ <script src="../js/main.js"></script>
+ <script src="../js/foundation.min.js"></script>
+ <script>
+ $(document).foundation();
+ </script>
+ <script>
+ $(document).ready(function() {
+  createStoryJS({
+    type:   'timeline',
           css:    '../timeline_source/css/timeline.css',     //OPTIONAL PATH TO CSS
-          js:     '../timeline_source/js/timeline-test-min.js',
+          js:     '../timeline_source/js/min/timeline-test-min.js',
+          //start_at_slide:   '1',
+          //debug: true,
 		  //js:     '../timeline_source/js/timeline-min.js',
 		  //js:     '../timeline_source/js/timeline.js',
           // width:    '800',
           start_zoom_adjust:    '1',
 		  //hash_bookmark:		true,							//OPTIONAL LOCATION BAR HASHES
-          height:   '600',
-          source:   'https://docs.google.com/spreadsheet/ccc?key=0Agemj7XmJRHMdFRXV3ItOVNfaDVCeDFwQVJULThRQ0E&usp=sharing',
-          embed_id: 'my-timeline'
-        });
-      });
-    </script>
+      height:   '650',
+      source:   'https://docs.google.com/spreadsheet/ccc?key=0Agemj7XmJRHMdFRXV3ItOVNfaDVCeDFwQVJULThRQ0E&usp=sharing',
+      embed_id: 'my-timeline'
+    });
+});
+ </script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='http://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+ <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+ <script>
+ (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+ e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+ e.src='http://www.google-analytics.com/analytics.js';
+ r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ ga('create','UA-XXXXX-X');ga('send','pageview');
+ </script>
+</body>
 </html>
