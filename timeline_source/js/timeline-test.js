@@ -1023,7 +1023,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Browser == 'undefined') {
         },
         searchDevice: function(d) {
             var device = "";
-            /*
+            
             if (d.match(/Android/i) || d.match(/iPhone|iPod/i)) {
                 device = "mobile";
             } else if (d.match(/iPad/i)) {
@@ -1033,8 +1033,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Browser == 'undefined') {
             } else {
                 device = "desktop";
             }
-            */
-            device = "desktop"
+            
+            // device = "desktop"
             
             return device;
         },
@@ -5524,6 +5524,13 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
                 VMM.Lib.css(".slider-item .media blockquote p", "font-size", "16px" );
                 
                 VMM.Lib.css(".slider-item", "overflow-y", "auto" );
+                //VMM.Lib.css(".vco-timeline .vco-navigation", "display", "none" );
+                //VMM.Lib.css(".vco-slider .slider-item", "height", "auto" );
+
+                //Hides the timeline scale
+                //VMM.Lib.css(".vco-slider .slider-container-mask","height","431px")
+                //VMM.Lib.css(".vco-timeline .vco-navigation","display","none")
+                //VMM.Lib.css(".storyjs-embed.full-embed","height","434px")
                 
                 
             } else {
@@ -5543,7 +5550,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
                 VMM.Lib.css(".slider-item .media blockquote p", "line-height", "36px" );
                 VMM.Lib.css(".slider-item .media blockquote p", "font-size", "28px" );
                 
-                //VMM.Lib.css(".slider-item", "display", "table" );
+                VMM.Lib.css(".slider-item", "display", "table" );
                 VMM.Lib.css(".slider-item", "overflow-y", "auto" );
             }
             
@@ -5830,7 +5837,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
             
             /* MAKE SLIDER DRAGGABLE/TOUCHABLE
             ================================================== */
-            /*
+            
             if (VMM.Browser.device == "tablet" || VMM.Browser.device == "mobile") {
                 // Different Animation duration for touch
                 config.duration = 500;
@@ -5848,7 +5855,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
                 VMM.bindEvent($explainer, onExplainerClick);
                 VMM.bindEvent($explainer, onExplainerClick, 'touchend');
             }
-            */
+            
             reSize(false, true);
             
             
