@@ -1034,8 +1034,6 @@ if(typeof VMM != 'undefined' && typeof VMM.Browser == 'undefined') {
                 device = "desktop";
             }
             
-            // device = "desktop"
-            
             return device;
         },
         searchString: function (data) {
@@ -2655,7 +2653,7 @@ LazyLoad = (function (doc) {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-// @codekit-prepend "../Library/LazyLoad.js";
+// @//codekit-prepend "../Library/LazyLoad.js";
 
 LoadLib = (function (doc) {
     var loaded  = [];
@@ -2750,14 +2748,14 @@ if(typeof VMM != 'undefined' && typeof VMM.Language == 'undefined') {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-// @codekit-prepend "VMM.js";
-// @codekit-prepend "VMM.Library.js";
-// @codekit-prepend "VMM.Browser.js";
-// @codekit-prepend "VMM.FileExtention.js";
-// @codekit-prepend "VMM.Date.js";
-// @codekit-prepend "VMM.Util.js";
-// @codekit-prepend "VMM.LoadLib.js";
-// @codekit-prepend "VMM.Language.js";
+// @//codekit-prepend "VMM.js";
+// @//codekit-prepend "VMM.Library.js";
+// @//codekit-prepend "VMM.Browser.js";
+// @//codekit-prepend "VMM.FileExtention.js";
+// @//codekit-prepend "VMM.Date.js";
+// @//codekit-prepend "VMM.Util.js";
+// @//codekit-prepend "VMM.LoadLib.js";
+// @//codekit-prepend "VMM.Language.js";
 
 
 
@@ -4797,10 +4795,10 @@ if(typeof VMM != 'undefined' && typeof VMM.TextElement == 'undefined') {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-// @codekit-prepend "VMM.ExternalAPI.js";
-// @codekit-prepend "VMM.MediaElement.js";
-// @codekit-prepend "VMM.MediaType.js";
-// @codekit-prepend "VMM.TextElement.js";
+// @//codekit-prepend "VMM.ExternalAPI.js";
+// @//codekit-prepend "VMM.MediaElement.js";
+// @//codekit-prepend "VMM.MediaType.js";
+// @//codekit-prepend "VMM.TextElement.js";
 
 
 /* **********************************************
@@ -5064,7 +5062,7 @@ if(typeof VMM != 'undefined' && typeof VMM.DragSlider == 'undefined') {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-// @codekit-append "VMM.Slider.Slide.js";
+// @//codekit-append "VMM.Slider.Slide.js";
 
 if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
     
@@ -5510,7 +5508,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
                 
                 mediasize.text_media.video =    VMM.Util.ratio.fit(mediasize.text_media.width, mediasize.text_media.height, 16, 9);
                 mediasize.media.video =         VMM.Util.ratio.fit(mediasize.media.width, mediasize.media.height, 16, 9);
-                
+
                 VMM.Lib.css(".slider-item .layout-text-media .text", "width", "100%" );
                 VMM.Lib.css(".slider-item .layout-text-media .text", "display", "block" );
                 VMM.Lib.css(".slider-item .layout-text-media .text .container", "display", "block" );
@@ -5524,6 +5522,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
                 VMM.Lib.css(".slider-item .media blockquote p", "font-size", "16px" );
                 
                 VMM.Lib.css(".slider-item", "overflow-y", "auto" );
+
+                //hides timeline scale
                 //VMM.Lib.css(".vco-timeline .vco-navigation", "display", "none" );
                 //VMM.Lib.css(".vco-slider .slider-item", "height", "auto" );
 
@@ -5851,7 +5851,6 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
                 // EXPLAINER
                 $explainer = VMM.appendAndGetElement($slider_mask, "<div>", "vco-feedback", "");
                 showMessege(null, "Swipe to Navigate");
-                VMM.Lib.height($explainer, config.slider.height);
                 VMM.bindEvent($explainer, onExplainerClick);
                 VMM.bindEvent($explainer, onExplainerClick, 'touchend');
             }
@@ -6914,13 +6913,13 @@ Utf8.decode = function(strUtf) {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-// @codekit-prepend "Core/VMM.Core.js";
-// @codekit-prepend "Language/VMM.Language.js";
-// @codekit-prepend "Media/VMM.Media.js";
-// @codekit-prepend "Slider/VMM.DragSlider.js";
-// @codekit-prepend "Slider/VMM.Slider.js";
-// @codekit-prepend "Library/AES.js";
-// @codekit-prepend "Library/bootstrap-tooltip.js";
+// @//codekit-prepend "Core/VMM.Core.js";
+// @//codekit-prepend "Language/VMM.Language.js";
+// @//codekit-prepend "Media/VMM.Media.js";
+// @//codekit-prepend "Slider/VMM.DragSlider.js";
+// @//codekit-prepend "Slider/VMM.Slider.js";
+// @//-prepend "Library/AES.js";
+// @//codekit-prepend "Library/bootstrap-tooltip.js";
 
 
 if(typeof VMM != 'undefined' && typeof VMM.StoryJS == 'undefined') {
@@ -6948,10 +6947,10 @@ if(typeof VMM != 'undefined' && typeof VMM.StoryJS == 'undefined') {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-// @codekit-prepend "Core/VMM.StoryJS.js";
+// @//codekit-prepend "Core/VMM.StoryJS.js";
 
-// @codekit-append "VMM.Timeline.TimeNav.js";
-// @codekit-append "VMM.Timeline.DataObj.js";
+// @//codekit-append "VMM.Timeline.TimeNav.js";
+// @//codekit-append "VMM.Timeline.DataObj.js";
 
 
 /* Timeline
@@ -7131,10 +7130,13 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
             
             if (VMM.Browser.device == "mobile" || VMM.Browser.device == "tablet") {
                 config.touch = true;
+                //removes nav height if its on a phone
+                config.nav.height           = 0;
+            }else{
+                 config.nav.height           = 200;
             }
             
-            config.nav.width            = config.width;
-            config.nav.height           = 200;
+
             config.feature.width        = config.width;
             config.feature.height       = config.height - config.nav.height;
             config.nav.zoom.adjust      = parseInt(config.start_zoom_adjust, 10);
@@ -7161,7 +7163,9 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
             $container  = VMM.appendAndGetElement($timeline, "<div>", "vco-container vco-main");
             $feature    = VMM.appendAndGetElement($container, "<div>", "vco-feature");
             $slider     = VMM.appendAndGetElement($feature, "<div>", "vco-slider");
-            $navigation = VMM.appendAndGetElement($container, "<div>", "vco-navigation");
+            if (VMM.Browser.device != "mobile") {//if on phone, removes timescale
+                $navigation = VMM.appendAndGetElement($container, "<div>", "vco-navigation");
+            }
             $feedback   = VMM.appendAndGetElement($timeline, "<div>", "vco-feedback", "");
             
             
@@ -7170,6 +7174,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
             }
             
             slider      = new VMM.Slider($slider, config);
+            //remove timeline creation
             timenav     = new VMM.Timeline.TimeNav($navigation);
             
             if (!has_width) {
