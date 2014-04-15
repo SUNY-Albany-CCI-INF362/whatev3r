@@ -19,9 +19,9 @@
   <script src="../js/vendor/modernizr-2.6.2.min.js"></script> 
 </head>
 <body>
-  
+
   <div class="row">
-    
+
     <nav class="top-bar header ontop" data-topbar>
       <ul class="title-area">
         <li class="name">
@@ -50,14 +50,15 @@
   <div class = "container">
     <!--Intro Text-->
 
-    <div class="row">
-      <br>
+    <div class="row" >
+      <!-- <br> -->
+      <!-- <div class="small-12 columns"> -->
       <div id="my-timeline"></div>
-      <div class="small-12 columns">
+      <!-- </div> -->
 
-        
 
-      </div>
+
+    
     </div>
   </div>
   <!--Intro Text-->
@@ -86,10 +87,25 @@
  </script>
  <script>
  $(document).ready(function() {
+
+
+  var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
+  var iPodAgent = navigator.userAgent.match(/iPhone/i) != null;
+  var AndroidAgent = navigator.userAgent.match(/Android/i) != null;
+  var webOSAgent = navigator.userAgent.match(/webOS/i) != null;
+
+  if(iPadAgent || iPodAgent || AndroidAgent || webOSAgent){//if device isn't desktop
+     var screenSize = window.innerHeight - 123 //- 35 //get screen window height - header and footer
+    //var screenSize = window.outerHeight - 123
+   } else {
+     var screenSize = 650;
+   }
+  //gets screen height and subtracts header and footer difference
+  
   createStoryJS({
     type:   'timeline',
           css:    '../timeline_source/css/timeline.css',     //OPTIONAL PATH TO CSS
-          js:     '../timeline_source/js/min/timeline-test-min.js',
+          js:     '../timeline_source/js/min/timeline-test.min.js',
           //start_at_slide:   '1',
           //debug: true,
 		  //js:     '../timeline_source/js/timeline-min.js',
@@ -97,7 +113,7 @@
           // width:    '800',
           start_zoom_adjust:    '1',
 		  //hash_bookmark:		true,							//OPTIONAL LOCATION BAR HASHES
-      height:   '650',
+      height:   screenSize,
       source:   'https://docs.google.com/spreadsheet/ccc?key=0Agemj7XmJRHMdFRXV3ItOVNfaDVCeDFwQVJULThRQ0E&usp=sharing',
       embed_id: 'my-timeline'
     });
