@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  
+<!--Smart Wizard scripts (for questionnaire)-->
+  <script type="text/javascript" src="smart_wizard/js/jquery-2.0.0.min.js"></script>
+  <link href="smart_wizard/styles/smart_wizard.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="smart_wizard/js/jquery.smartWizard.js"></script>
+
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+      // Initialize Smart Wizard
+        $('.wizard').smartWizard();
+  }); 
+
+  
+</script>
+
+        <!-- This is where the instruction for SmartWizard is found
+        https://github.com/mstratman/jQuery-Smart-Wizard
+         -->
+      </head>
+      <body>
+
+        <div class="row">
+
+          <nav class="top-bar header" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="index.html">Foreclosure Guide</a></h1>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+            </ul>
+
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li class="has-dropdown">
+                  <a class = "bg-color" href="#">Menu</a>
+                  <ul class="dropdown">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide/generaltimeline.html">Foreclosure Timeline</a></li>
+                    <li class="active"><a href="counselingcenterstable.html">Need Help?</a></li>
+                    <li><a href="Foreclosure_terms.html">Important Terms</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+        
+      <!--Body Container-->  
+        <div class = "container">
+
+         <div class="row">
+          <br>
+          <div class="small-12 columns">
+
+<!--Start of Questionnaire-->
+<div class="wizard swMain">
+  <ul>
+    <li>
+          <h3 class="questionNumber">Question 1</h3>
+          <span class="questionDesc">
+             Have you fallen behind on Mortage payments?<br />
+    <a href="#question-1-yes"><p>Yes</p></a> 
+    <a href="#question-1-no"><p>No</p></a>
+</span>
+</li>
+    <li id="question-1-yes">
+          <h3 class="questionNumber">Question 2</h3>
+          <span class="questionDesc">
+             Have you recieved a 90-Day Notice?<br />
+    <a href="#question-2-yes"><p>Yes</p></a> 
+    <a href="#question-2-no"><p>No</p></a>
+</span>
+      </li>
+    <li id="question-2-yes">
+          <h3 class="questionNumber">Question 3</h3>
+          <span class="questionDesc">
+             Have you recieved a Demand Letter?<br />
+    <a href="#question-3-yes"><p>Yes</p></a> 
+    <a href="#question-3-no"><p>No</p></a>
+</span>                   
+       </li>
+    <li id="question-3-yes">
+          <h3 class="questionNumber">Question 4</h3>
+          <span class="questionDesc">
+             Have you filed a Lis Pendens and Summons and Complaints?<br />
+    <a href="#question-4-yes"><p>Yes</p></a> 
+    <a href="#question-4-no"><p>No</p></a>
+    <a href="#question-4-ip"><p>I'm in the process of filing them.</p></a>
+</span>                   
+      </li>
+      <li id="question-4-yes">
+          <h3 class="questionNumber">Question 5</h3>
+          <span class="questionDesc">
+             Have you filed an Answer?<br />
+    <a href="#question-5-yes"><p>Yes</p></a> 
+    <a href="#question-5-no"><p>No</p></a>
+    <a href="#question-5-yes"><p>Didn't want to.</p></a>
+</span>                   
+      </li>
+      <li id="question-5-yes">
+          <h3 class="questionNumber">Question 6</h3>
+          <span class="questionDesc">
+             Was a Settlement Conference scheduled?<br />
+    <a href="#question-6-yes"><p>Yes</p></a> 
+    <a href="#question-6-no"><p>Not yet</p></a>
+    
+</span>                   
+      </li>
+      <li id="question-6-yes">
+          <h3 class="questionNumber">Question 7</h3>
+          <span class="questionDesc">
+             Was the Settlement Conference successful?<br />
+    <a href="#question-7-yes"><p>Yes</p></a> 
+    <a href="#question-7-no"><p>No</p></a>
+    
+</span>                   
+      </li>
+  </ul>
+  <div id="question-1-no">   
+      <h2 class="questionTitle">How to avoid foreclosure.</h2>
+       <!-- content -->
+       <p>Results format: a)What has happned? b) Description of the stage?
+        c) What to expect next?</p>
+  </div>
+  <div id="question-2-no">   
+      <h2 class="questionTitle">Stage 1 Results</h2>
+       <!-- content -->
+  </div>
+  <div id="question-3-no">
+      <h2 class="questionTitle">Stage 2 Results</h2> 
+       <!-- content -->
+  </div>
+  <div id="question-4-no">
+      <h2 class="questionTitle">Stage 3 Results</h2> 
+       <!-- content -->
+  </div>                       
+  <div id="question-4-ip">
+      <h2 class="questionTitle">Stage 4 Results</h2>   
+       <!-- content -->
+  </div>
+  <div id="question-5-no">
+      <h2 class="questionTitle">Stage 5 Results</h2>   
+       <!-- content -->                         
+  </div>
+  <div id="question-6-no">
+      <h2 class="questionTitle">Stage 6 Results</h2>   
+       <!-- content -->
+  </div>
+  <div id="question-7-yes">
+      <h2 class="questionTitle">Stage 7A Results</h2>   
+       <!-- content -->
+  </div>
+  <div id="question-7-no">
+      <h2 class="questionTitle">Stage 7B Results</h2>   
+       <!-- content -->
+  </div>
+</div>
+
+
+<!--Body contaiter ending-->
+       </div>
+        </div>
+      </div>
+
+
+             <!--Footer start-->
+      <footer class="row">
+        <hr>
+        <div class="small-12 columns">
+         <p>Sponsored by the <a href="//www.empirejustice.org/">Empire Justice Center</a>. &copy; 2014 This website is for general information only and should not be used as formal legal advice.
+         </p>
+       </div>
+     </footer>
+     <!--Footer ends-->
+
+
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+     <script src="js/plugins.js"></script>
+     <script src="js/main.js"></script>
+     <script src="js/foundation.min.js"></script>
+     <script src="js/app/responsive-table.min.js">
+     $('table').responsiveTable();
+
+     </script>
+     <script src="/js/foundation/foundation.dropdown.min.js"></script>
+
+
+<!--Questionnaire script-->
+<script>
+    
+</script>
+
+ <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+ <script>
+ (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+ e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+ e.src='http://www.google-analytics.com/analytics.js';
+ r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ ga('create','UA-XXXXX-X');ga('send','pageview');
+ </script>
+</body>
+</html>
