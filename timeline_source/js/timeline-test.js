@@ -1056,6 +1056,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Browser == 'undefined') {
             var index = dataString.indexOf(this.versionSearchString);
             if (index == -1) return;
             return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+          
             
         },
         dataBrowser: [
