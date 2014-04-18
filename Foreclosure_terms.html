@@ -15,6 +15,19 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/app.css" />
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(document).ready(function(){
+
+$('a').click(function () {
+var divname= this.name;
+$("#"+divname).show("slow").siblings().hide("slow");
+});
+
+});
+</script> 
+
 </head>
 <body>
   
@@ -53,15 +66,59 @@
       <div class="small-12 columns">
         <p><h4>You may see terms used throughout the legal documentations you have received with which you are unfamiliar. The following are definitions for several of those terms used.</h4></p>
 
-        <p><h6><b>31% Payment:</b></h6> A growing trend within the mortgage industry is to have a goal of having your maximum monthly mortgage payment (including principal, interest, real estate taxes, and homeowner’s insurance) be at most 31% of your Gross Income.</p>
+        <div class="terms">
+            <ol>
+                <li><a href="#" name="div1">31% Payment</a></li>
+                <li><a href="#" name="div2">Acceleration Letter</a></li>
+                <li><a href="#" name="div3">Answer</a></li>
+                <li><a href="#" name="div4">Cancellation of Lis Pendens</a></li>
+                <li><a href="#" name="div5">Capitalization</a></li>
+                <li><a href="#" name="div6">Complaint</a></li>
+                <li><a href="#" name="div7">Deed in Lieu of Foreclosure</a></li>
+                <li><a href="#" name="div8">Default</a></li>
+                <li><a href="#" name="div9">Deficiency</a></li>
+                <li><a href="#" name="div10">Discovery</a></li>
+                <li><a href="#" name="div11">Forbearance</a></li>
+                <li><a href="#" name="div12">Interest Rate</a></li>
+                <li><a href="#" name="div13">Judgement</a></li>
+                <li><a href="#" name="div14">Lis Pendens</a></li>
+                <li><a href="#" name="div15">Loan Modification</a></li>
+                <li><a href="#" name="div16">Loss Mitigation</a></li>
+                <li><a href="#" name="div17">Mortgage</a></li>
+                <li><a href="#" name="div18">Note</a></li>
+                <li><a href="#" name="div19">Notice of Appearance</a></li>
+                <li><a href="#" name="div20">Order of Reference</a></li>
+                <li><a href="#" name="div21">Principal Reduction</a></li>
+                <li><a href="#" name="div22">Pro Se</a></li>
+                <li><a href="#" name="div23">Process Server</a></li>
+                <li><a href="#" name="div24">Refinancing</a></li>
+                <li><a href="#" name="div25">Repayment Plan</a></li>
+                <li><a href="#" name="div26">Service</a></li>
+                <li><a href="#" name="div27">Short Sale</a></li>
+                <li><a href="#" name="div28">Stipulation of Discontinuance</a></li>
+                <li><a href="#" name="div29">Summary Judgment</a></li>
+                <li><a href="#" name="div30">Summons</a></li>
 
-        <p><h6><b>Acceleration Letter (a.k.a.:demand letter):</b></h6>A letter from your lender, sent after you have stopped paying, stating that the whole amount of your mortgage is due immediately.</p>
+            </ol>
+        </div>
 
-        <p><h6><b>Answer:</b></h6> A written response to the Complaint, in which a homeowner lists all of their defenses to the foreclosure, as well as raises any counterclaims they may have against the Bank.</p>
+        <div>
+            <div id="div1" style="display:none">
+             A growing trend within the mortgage industry is to have a goal of having your maximum monthly mortgage payment (including principal, interest, real estate taxes, and homeowner’s insurance) be at most 31% of your Gross Income.
+         </div>
+         <div id="div2" style="display:none">
+            A letter from your lender, sent after you have stopped paying, stating that the whole amount of your mortgage is due immediately.
+        </div>
 
-        <p><h6><b>Cancellation of Lis Pendens:</b></h6>A written notice that removes the previously filed Lis Pendens from the county clerk’s records, which removes questions regarding the status of title to the property.</p>
+         <div id="div3" style="display:none">
+             A written response to the Complaint, in which a homeowner lists all of their defenses to the foreclosure, as well as raises any counterclaims they may have against the Bank.
+         </div>
 
-        <p><h6><b>Capitalization:</b></h6>Capitalization occurs when items owed on a loan (past due interest, taxes, late charges, legal costs or other fees) are added to the unpaid principal balance of the loan and are treated as part of a new principal balance.</p>   
+        <div id="div4" style="display:none">
+        A written notice that removes the previously filed Lis Pendens from the county clerk’s records, which removes questions regarding the status of title to the property.
+    </div>
+
+       <!--<p><h6><b>Capitalization:</b></h6>Capitalization occurs when items owed on a loan (past due interest, taxes, late charges, legal costs or other fees) are added to the unpaid principal balance of the loan and are treated as part of a new principal balance.</p>   
 
         <p><h6><b>Complaint:</b></h6>A written document that is filed with the Court and tells you and the Court the reasons the Bank is suing you and what they are asking the Court to do.  Because this is a foreclosure, the Bank is claiming you have not made your monthly payments as required by your Mortgage and Note.</p>
 
@@ -111,7 +168,8 @@
 
         <p><h6><b>Summary Judgment:</b></h6>A motion in a court proceeding to end the case without a trial on all the facts. This is typically done in the foreclosure context before any Discovery has occurred.</p>
 
-        <p><h6><b>Summons:</b></h6>A legal document that notifi es a party that a legal proceeding has been started.</p>
+        <p><h6><b>Summons:</b></h6>A legal document that notifi es a party that a legal proceeding has been started.</p>-->
+    </div>
 
 
 
