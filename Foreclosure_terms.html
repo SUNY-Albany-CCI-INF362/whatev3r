@@ -17,16 +17,6 @@
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
    <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script>
-$(document).ready(function(){
-
-$('a').click(function () {
-var divname= this.name;
-$("#"+divname).show("slow").siblings().hide("slow");
-});
-
-});
-</script> 
 
 </head>
 <body>
@@ -67,18 +57,58 @@ $("#"+divname).show("slow").siblings().hide("slow");
         <p><h4>You may see terms used throughout the legal documentations you have received with which you are unfamiliar. The following are definitions for several of those terms used.</h4></p>
 
         <div class="terms">
-            <ol>
-                <li><a href="#" name="div1">31% Payment</a></li>
-                <li><a href="#" name="div2">Acceleration Letter</a></li>
-                <li><a href="#" name="div3">Answer</a></li>
-                <li><a href="#" name="div4">Cancellation of Lis Pendens</a></li>
-                <li><a href="#" name="div5">Capitalization</a></li>
-                <li><a href="#" name="div6">Complaint</a></li>
-                <li><a href="#" name="div7">Deed in Lieu of Foreclosure</a></li>
-                <li><a href="#" name="div8">Default</a></li>
-                <li><a href="#" name="div9">Deficiency</a></li>
-                <li><a href="#" name="div10">Discovery</a></li>
-                <li><a href="#" name="div11">Forbearance</a></li>
+            <dl class ="accordion" data-accordion>
+                
+                <dd>
+                  <a href="#panel1">31% Payment</a>
+                  <div id="panel1" class="content">A growing trend within the mortgage industry is to have a goal of having your maximum monthly mortgage payment (including principal, interest, real estate taxes, and homeowner’s insurance) be at most 31% of your Gross Income.</div></dd>
+                <dd>
+                  <a href="#panel2">Acceleration Letter</a>
+                   <div id="panel2" class="content">A letter from your lender, sent after you have stopped paying, stating that the whole amount of your mortgage is due immediately.</div></dd>
+
+                <dd>
+                  <a href="#panel3">Answer</a>
+                   <div id="panel3" class="content">A written response to the Complaint, in which a homeowner lists all of their defenses to the foreclosure, as well as raises any counterclaims they may have against the Bank.</div></dd>
+
+                <dd>
+                  <a href="#panel4">Cancellation of Lis Pendens</a>
+                   <div id="panel4" class="content">A written notice that removes the previously filed Lis Pendens from the county clerk’s records, which removes questions regarding the status of title to the property.</div></dd>
+
+                 <dd>
+                  <a href="#panel5">Capitalization</a>
+                   <div id="panel5" class="content">Capitalization occurs when items owed on a loan (past due interest, taxes, late charges, legal costs or other fees) are added to the unpaid principal balance of the loan and are treated as part of a new principal balance.</div></dd> 
+
+                 <dd>
+                  <a href="#panel6">Complaint</a>
+                   <div id="panel6" class="content">A written document that is filed with the Court and tells you and the Court the reasons the Bank is suing you and what they are asking the Court to do.  Because this is a foreclosure, the Bank is claiming you have not made your monthly payments as required by your Mortgage and Note.</div></dd>
+
+                 <dd>
+                  <a href="#panel7">Deed in Lieu of Foreclosure</a>
+                   <div id="panel7" class="content">A process where the borrower gives the deed to the property back to the lender, and the lender discontinues any foreclosure action.</div></dd>
+
+                 <dd>
+                  <a href="#panel8">Default</a>
+                   <div id="panel8" class="content">Failing to meet the requirements of an agreement.  Most defaults involve failing to make required mortgage payments on time.</div></dd>   
+
+                <dd>
+                  <a href="#panel9">Deficiency</a>
+                   <div id="panel9" class="content">The amount a borrower owes to the lender after the sale of the property at a foreclosure sale in the event the property is sold for less than the amount of the debt owed.</div></dd>
+
+                 <dd>
+                  <a href="#panel10">Discovery</a>
+                   <div id="panel10" class="content"> A tool used in lawsuits to obtain information and documents from other parties.</div></dd>
+
+                  <dd>
+                  <a href="#panel11">Forbearance</a>
+                   <div id="panel11" class="content">A plan to cure a default that may involve a temporary suspension or reduction of payments.</div></dd> 
+
+                  <dd>
+                  <a href="#panel11">Interest Rate</a>
+                   <div id="panel11" class="content">The amount charged by a lender for the right to borrow money, as expressed as a percentage of the principal amount borrowed.</div></dd>       
+
+
+                   </dl>           
+
                 <li><a href="#" name="div12">Interest Rate</a></li>
                 <li><a href="#" name="div13">Judgement</a></li>
                 <li><a href="#" name="div14">Lis Pendens</a></li>
@@ -104,14 +134,13 @@ $("#"+divname).show("slow").siblings().hide("slow");
 
         <div>
             <div id="div1" style="display:none">
-             A growing trend within the mortgage industry is to have a goal of having your maximum monthly mortgage payment (including principal, interest, real estate taxes, and homeowner’s insurance) be at most 31% of your Gross Income.
          </div>
          <div id="div2" style="display:none">
-            A letter from your lender, sent after you have stopped paying, stating that the whole amount of your mortgage is due immediately.
+            
         </div>
 
          <div id="div3" style="display:none">
-             A written response to the Complaint, in which a homeowner lists all of their defenses to the foreclosure, as well as raises any counterclaims they may have against the Bank.
+             
          </div>
 
         <div id="div4" style="display:none">
