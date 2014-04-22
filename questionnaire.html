@@ -27,107 +27,121 @@
 
         <!-- This is where the instruction for SmartWizard is found
         https://github.com/mstratman/jQuery-Smart-Wizard
-    -->
-</head>
-<body>
+      -->
+    </head>
+    <body>
 
-    <div class="row">
+      <div class="row">
 
-      <nav class="top-bar header" data-topbar>
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="index.html">Foreclosure Guide</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-    </ul>
+        <nav class="top-bar header" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="index.html">Foreclosure Guide</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
 
-    <section class="top-bar-section">
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li class="has-dropdown">
-          <a class = "bg-color" href="#">Menu</a>
-          <ul class="dropdown">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="guide/generaltimeline.html">Foreclosure Timeline</a></li>
-            <li class="active"><a href="counselingcenterstable.html">Need Help?</a></li>
-            <li><a href="Foreclosure_terms.html">Important Terms</a></li>
-        </ul>
-    </li>
-</ul>
-</section>
-</nav>
-</div>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="has-dropdown">
+                <a class = "bg-color" href="#">Menu</a>
+                <ul class="dropdown">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="guide/generaltimeline.html">Foreclosure Timeline</a></li>
+                  <li class="active"><a href="counselingcenterstable.html">Need Help?</a></li>
+                  <li><a href="Foreclosure_terms.html">Important Terms</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </div>
 
-<!--Body Container-->  
-<div class = "container">
+      <!--Body Container-->  
+      <div class = "container">
 
- <div class="row">
-  <br>
-  <div class="small-12 columns">
+       <div class="row">
+        <br>
+        <div class="small-12 columns">
 
-    <div><h4>Questionnaire Page</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis adipiscing, tellus pulvinar scelerisque sagittis, justo quam porta felis, nec commodo leo mauris id nulla. Nullam ut malesuada lectus. Mauris laoreet semper volutpat. Integer sodales non quam at dignissim. Sed dapibus sem ac ipsum pretium vehicula. Vivamus mollis mattis cursus. Donec euismod, elit eget imperdiet faucibus, arcu ligula pharetra enim, vitae scelerisque sem mauris eget justo. Proin ut molestie nibh.</p></div>
-    <!--Start of Questionnaire-->
-    <div class="wizard swMain">
-      <ul>
-       <div class="questions" id="question-0"> <li >
-          <h3 class="questionNumber">Question 1</h3>
+          <div><h4>Questionnaire Page</h4><p>Here we will ask you 7 simple questions. Based on your situation, select either ‘Yes’ or ‘No’ to proceed through the Questionnaire. Once you get to the end, you will be presented with a brief description of your current stage in the Foreclosure process and what you can expect next.</p></div>
+          <!--Start of Questionnaire-->
+          <div class="wizard swMain">
+            <ul>
+             <div class="questions" id="question-0"> <li >
+              <h3 class="questionNumber">Question 1</h3>
+              <span class="questionDesc">
+               Have you fallen behind on Mortage payments?<br />
+               <form>
+                 <input type="radio" name="answer" class="trigger" value="yes" data-rel="question-1-yes">Yes 
+                 <input type="radio" name="answer" class="trigger" value="no" data-rel="question-1-no">No
+               </form>
+             </span>
+           </li>  </div>
+           <div class="questions" id="question-1-yes"> <li >
+            <h3 class="questionNumber">Question 2</h3>
+            <span class="questionDesc">
+             Have you recieved a 90-Day Notice?<br />
+             <form>
+               <input type="radio" name="answer" class="trigger" value="yes" data-rel="question-2-yes">Yes 
+               <input type="radio" name="answer" class="trigger" value="no" data-rel="question-2-no">No
+             </form>
+           </span>
+         </li>  </div>
+         <div class="questions" id="question-2-yes"> <li >
+          <h3 class="questionNumber">Question 3</h3>
           <span class="questionDesc">
-             Have you fallen behind on Mortage payments?<br />
-             <a href="#question-1-yes"><p>Yes</p></a> 
-             <a href="#question-1-no"><p>No</p></a>
-         </span>
-     </li>  </div>
-     <div class="questions" id="question-1-yes"> <li >
-      <h3 class="questionNumber">Question 2</h3>
+           Have you recieved a Demand Letter?<br />
+           <form>
+            <input type="radio" name="answer" class="trigger" value="yes" data-rel="question-3-yes">Yes 
+            <input type="radio" name="answer" class="trigger" value="no" data-rel="question-3-no">No
+          </form>
+        </span>                   
+      </li>  </div>
+      <div class="questions" id="question-3-yes"> <li >
+        <h3 class="questionNumber">Question 4</h3>
+        <span class="questionDesc">
+         Have you filed a Lis Pendens and Summons and Complaints?<br />
+         <form>
+          <input type="radio" name="answer" class="trigger" value="yes" data-rel="question-4-yes">Yes 
+          <input type="radio" name="answer" class="trigger" value="no" data-rel="question-4-no">No
+          <input type="radio" name="answer" class="trigger" value="ip" data-rel="question-4-ip">I'm in the process of filing them.
+        </form>
+      </span>                   
+    </li>  </div>
+    <div class="questions" id="question-4-yes"> <li >
+      <h3 class="questionNumber">Question 5</h3>
       <span class="questionDesc">
-         Have you recieved a 90-Day Notice?<br />
-         <a href="#question-2-yes"><p>Yes</p></a> 
-         <a href="#question-2-no"><p>No</p></a>
-     </span>
- </li>  </div>
- <div class="questions" id="question-2-yes"> <li >
-  <h3 class="questionNumber">Question 3</h3>
-  <span class="questionDesc">
-     Have you recieved a Demand Letter?<br />
-     <a href="#question-3-yes"><p>Yes</p></a> 
-     <a href="#question-3-no"><p>No</p></a>
- </span>                   
-</li>  </div>
-<div class="questions" id="question-3-yes"> <li >
-  <h3 class="questionNumber">Question 4</h3>
-  <span class="questionDesc">
-     Have you filed a Lis Pendens and Summons and Complaints?<br />
-     <a href="#question-4-yes"><p>Yes</p></a> 
-     <a href="#question-4-no"><p>No</p></a>
-     <a href="#question-4-ip"><p>I'm in the process of filing them.</p></a>
- </span>                   
-</li>  </div>
-<div class="questions" id="question-4-yes"> <li >
-  <h3 class="questionNumber">Question 5</h3>
-  <span class="questionDesc">
-     Have you filed an Answer?<br />
-     <a href="#question-5-yes"><p>Yes</p></a> 
-     <a href="#question-5-no"><p>No</p></a>
-     <a href="#question-5-yes"><p>Didn't want to.</p></a>
- </span>                   
-</li>  </div>
-<div class="questions" id="question-5-yes"> <li >
-  <h3 class="questionNumber">Question 6</h3>
-  <span class="questionDesc">
+       Have you filed an Answer?<br />
+       <form>
+        <input type="radio" name="answer" class="trigger" value="yes" data-rel="question-5-yes">Yes 
+        <input type="radio" name="answer" class="trigger" value="no" data-rel="question-5-no">No
+        <input type="radio" name="answer" class="trigger" value="ip" data-rel="question-5-yes">Didn't want to.
+      </form>
+    </span>                   
+  </li>  </div>
+  <div class="questions" id="question-5-yes"> <li >
+    <h3 class="questionNumber">Question 6</h3>
+    <span class="questionDesc">
      Was a Settlement Conference scheduled?<br />
-     <a href="#question-6-yes"><p>Yes</p></a> 
-     <a href="#question-6-no"><p>Not yet</p></a>
+     <form>
+      <input type="radio" name="answer" class="trigger" value="yes" data-rel="question-6-yes">Yes 
+      <input type="radio" name="answer" class="trigger" value="no" data-rel="question-6-no">Not yet
 
- </span>                   
+    </form>
+  </span>                   
 </li>  </div>
 <div class="questions" id="question-6-yes"> <li >
   <h3 class="questionNumber">Question 7</h3>
   <span class="questionDesc">
-     Was the Settlement Conference successful?<br />
-     <a href="#question-7-yes"><p>Yes</p></a> 
-     <a href="#question-7-no"><p>No</p></a>
+   Was the Settlement Conference successful?<br />
+   <form>
+    <input type="radio" name="answer" class="trigger" value="yes" data-rel="question-7-yes">Yes 
+    <input type="radio" name="answer" class="trigger" value="no" data-rel="question-7-no">No
 
- </span>                   
+  </form>
+</span>                   
 </li>  </div>
 </ul>
 <div class="results"id="question-1-no">   
@@ -135,44 +149,45 @@
   <!-- content -->
   <p>Results format: a)What has happned? b) Description of the stage?
     c) What to expect next?</p>
+  </div>
+  <div class="results" id="question-2-no">   
+    <h2 class="resultTitle">Stage 1 Results</h2>
+    <!-- content -->
+    <h4>What has happened: </h4><p></P>
+    <h4>Description: </h4><p>This can happen for any number of reasons, but the end result is the same: your financial situation is such that you have not been able to keep current on your Mortgage. Each Mortgage has specific language about when the Bank may begin a foreclosure proceeding. For instance, we often see mortgages that say if a homeowner falls more than 3 months behind on payments, the Bank can begin foreclosure proceedings.</p>
+  </div>
+  <div class="results" id="question-3-no">
+    <h2 class="resultTitle">Stage 2 Results</h2> 
+    <!-- content -->
+  </div>
+  <div class="results" id="question-4-no">
+    <h2 class="resultTitle">Stage 3 Results</h2> 
+    <!-- content -->
+  </div>                       
+  <div class="results" id="question-4-ip">
+    <h2 class="resultTitle">Stage 4 Results</h2>   
+    <!-- content -->
+  </div>
+  <div class="results" id="question-5-no">
+    <h2 class="resultTitle">Stage 5 Results</h2>   
+    <!-- content -->                         
+  </div>
+  <div class="results" id="question-6-no">
+    <h2 class="resultTitle">Stage 6 Results</h2>   
+    <!-- content -->
+  </div>
+  <div class="results" id="question-7-yes">
+    <h2 class="resultTitle">Stage 7A Results</h2>   
+    <!-- content -->
+  </div>
+  <div class="results" id="question-7-no">
+    <h2 class="resultTitle">Stage 7B Results</h2>   
+    <!-- content -->
+  </div>
 </div>
-<div class="results" id="question-2-no">   
-  <h2 class="resultTitle">Stage 1 Results</h2>
-  <!-- content -->
-  <h4>What has happened: </h4><p></P>
-  <h4>Description: </h4><p>This can happen for any number of reasons, but the end result is the same: your financial situation is such that you have not been able to keep current on your Mortgage. Each Mortgage has specific language about when the Bank may begin a foreclosure proceeding. For instance, we often see mortgages that say if a homeowner falls more than 3 months behind on payments, the Bank can begin foreclosure proceedings.</p>
+<div class="reset_button">
+<form><input type="button" name="Reset_button" class="trigger" value="Reset Questionnaire" data-rel="question-0"></form>
 </div>
-<div class="results" id="question-3-no">
-  <h2 class="resultTitle">Stage 2 Results</h2> 
-  <!-- content -->
-</div>
-<div class="results" id="question-4-no">
-  <h2 class="resultTitle">Stage 3 Results</h2> 
-  <!-- content -->
-</div>                       
-<div class="results" id="question-4-ip">
-  <h2 class="resultTitle">Stage 4 Results</h2>   
-  <!-- content -->
-</div>
-<div class="results" id="question-5-no">
-  <h2 class="resultTitle">Stage 5 Results</h2>   
-  <!-- content -->                         
-</div>
-<div class="results" id="question-6-no">
-  <h2 class="resultTitle">Stage 6 Results</h2>   
-  <!-- content -->
-</div>
-<div class="results" id="question-7-yes">
-  <h2 class="resultTitle">Stage 7A Results</h2>   
-  <!-- content -->
-</div>
-<div class="results" id="question-7-no">
-  <h2 class="resultTitle">Stage 7B Results</h2>   
-  <!-- content -->
-</div>
-</div>
-
-
 <!--Body contaiter ending-->
 </div>
 </div>
@@ -181,10 +196,10 @@
 
 <!--Footer start-->
 <footer class="row">
-    <hr>
-    <div class="small-12 columns">
-     <p>Sponsored by the <a href="//www.empirejustice.org/">Empire Justice Center</a>. &copy; 2014 This website is for general information only and should not be used as formal legal advice.
-     </p>
+  <hr>
+  <div class="small-12 columns">
+   <p>Sponsored by the <a href="//www.empirejustice.org/">Empire Justice Center</a>. &copy; 2014 This website is for general information only and should not be used as formal legal advice.
+   </p>
  </div>
 </footer>
 <!--Footer ends-->
@@ -203,7 +218,7 @@
 
 <!--Questionnaire script-->
 <script>
-    $(document).foundation();
+$(document).foundation();
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
