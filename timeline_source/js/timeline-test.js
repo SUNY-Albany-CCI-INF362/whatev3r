@@ -5802,10 +5802,13 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
             navigation.prevBtn = VMM.appendAndGetElement($slider, "<div>", "nav-previous");
             navigation.nextBtnContainer = VMM.appendAndGetElement(navigation.nextBtn, "<div>", "nav-container", temp_icon);
             navigation.prevBtnContainer = VMM.appendAndGetElement(navigation.prevBtn, "<div>", "nav-container", temp_icon);
+            //Removes date heading
+            /*
             if (config.type == "timeline") {
                 navigation.nextDate = VMM.appendAndGetElement(navigation.nextBtnContainer, "<div>", "date", "");
                 navigation.prevDate = VMM.appendAndGetElement(navigation.prevBtnContainer, "<div>", "date", "");
             }
+            */
             navigation.nextTitle = VMM.appendAndGetElement(navigation.nextBtnContainer, "<div>", "title", "");
             navigation.prevTitle = VMM.appendAndGetElement(navigation.prevBtnContainer, "<div>", "title", "");
             
@@ -6067,29 +6070,29 @@ if (typeof VMM.Slider != 'undefined') {
             trace("BUILDSLIDE");
             $wrap   = VMM.appendAndGetElement(element, "<div>", "content");
             $slide  = VMM.appendAndGetElement($wrap, "<div>");
-            
+            //Remove dates from top header
             /* DATE
             ================================================== */
-            if (data.startdate != null && data.startdate != "") {
-                if (type.of(data.startdate) == "date") {
-                    if (data.type != "start") {
-                        var st  = VMM.Date.prettyDate(data.startdate, false, data.precisiondate);
-                        var en  = VMM.Date.prettyDate(data.enddate, false, data.precisiondate);
-                        var tag = "";
-                        /* TAG / CATEGORY
-                        ================================================== */
-                        if (data.tag != null && data.tag != "") {
-                            tag     = VMM.createElement("span", data.tag, "slide-tag");
-                        }
+            // if (data.startdate != null && data.startdate != "") {
+            //     if (type.of(data.startdate) == "date") {
+            //         if (data.type != "start") {
+            //             var st  = VMM.Date.prettyDate(data.startdate, false, data.precisiondate);
+            //             var en  = VMM.Date.prettyDate(data.enddate, false, data.precisiondate);
+            //             var tag = "";
+            //             /* TAG / CATEGORY
+            //             ================================================== */
+            //             if (data.tag != null && data.tag != "") {
+            //                 tag     = VMM.createElement("span", data.tag, "slide-tag");
+            //             }
                         
-                        if (st != en) {
-                            c.text += VMM.createElement("h2", st + " &mdash; " + en + tag, "date");
-                        } else {
-                            c.text += VMM.createElement("h2", st + tag, "date");
-                        }
-                    }
-                }
-            }
+            //             if (st != en) {
+            //                 c.text += VMM.createElement("h2", st + " &mdash; " + en + tag, "date");
+            //             } else {
+            //                 c.text += VMM.createElement("h2", st + tag, "date");
+            //             }
+            //         }
+            //     }
+            // }
             
             /* HEADLINE
             ================================================== */
@@ -8901,10 +8904,12 @@ if(typeof VMM.Timeline != 'undefined' && typeof VMM.Timeline.TimeNav == 'undefin
             $timenav                    = VMM.appendAndGetElement(layout, "<div>", "timenav");
             $content                    = VMM.appendAndGetElement($timenav, "<div>", "content");
             $time                       = VMM.appendAndGetElement($timenav, "<div>", "time");
-            $timeintervalminor          = VMM.appendAndGetElement($time, "<div>", "time-interval-minor");
-            $timeintervalminor_minor    = VMM.appendAndGetElement($timeintervalminor, "<div>", "minor");
-            $timeintervalmajor          = VMM.appendAndGetElement($time, "<div>", "time-interval-major");
-            $timeinterval               = VMM.appendAndGetElement($time, "<div>", "time-interval");
+
+            // removes time interval
+            //$timeintervalminor          = VMM.appendAndGetElement($time, "<div>", "time-interval-minor");
+            //$timeintervalminor_minor    = VMM.appendAndGetElement($timeintervalminor, "<div>", "minor");
+            //$timeintervalmajor          = VMM.appendAndGetElement($time, "<div>", "time-interval-major");
+            //$timeinterval               = VMM.appendAndGetElement($time, "<div>", "time-interval");
             $timebackground             = VMM.appendAndGetElement(layout, "<div>", "timenav-background");
             $timenavline                = VMM.appendAndGetElement($timebackground, "<div>", "timenav-line");
             $timenavindicator           = VMM.appendAndGetElement($timebackground, "<div>", "timenav-indicator");
