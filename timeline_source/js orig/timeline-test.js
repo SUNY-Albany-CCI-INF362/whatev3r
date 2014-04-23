@@ -21,7 +21,7 @@
 
 */  
 
- 
+
 /*  Simple JavaScript Inheritance
     By John Resig http://ejohn.org/
     MIT Licensed.
@@ -1023,6 +1023,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Browser == 'undefined') {
         },
         searchDevice: function(d) {
             var device = "";
+            
             if (d.match(/Android/i) || d.match(/iPhone|iPod/i)) {
                 device = "mobile";
             } else if (d.match(/iPad/i)) {
@@ -1032,6 +1033,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Browser == 'undefined') {
             } else {
                 device = "desktop";
             }
+            
             return device;
         },
         searchString: function (data) {
@@ -2651,7 +2653,7 @@ LazyLoad = (function (doc) {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-//--@codekit-prepend "../Library/LazyLoad.js";
+// @//codekit-prepend "../Library/LazyLoad.js";
 
 LoadLib = (function (doc) {
     var loaded  = [];
@@ -2746,14 +2748,14 @@ if(typeof VMM != 'undefined' && typeof VMM.Language == 'undefined') {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-//--@codekit-prepend "VMM.js";
-//--@codekit-prepend "VMM.Library.js";
-//--@codekit-prepend "VMM.Browser.js";
-//--@codekit-prepend "VMM.FileExtention.js";
-//--@codekit-prepend "VMM.Date.js";
-//--@codekit-prepend "VMM.Util.js";
-//--@codekit-prepend "VMM.LoadLib.js";
-//--@codekit-prepend "VMM.Language.js";
+// @//codekit-prepend "VMM.js";
+// @//codekit-prepend "VMM.Library.js";
+// @//codekit-prepend "VMM.Browser.js";
+// @//codekit-prepend "VMM.FileExtention.js";
+// @//codekit-prepend "VMM.Date.js";
+// @//codekit-prepend "VMM.Util.js";
+// @//codekit-prepend "VMM.LoadLib.js";
+// @//codekit-prepend "VMM.Language.js";
 
 
 
@@ -4793,10 +4795,10 @@ if(typeof VMM != 'undefined' && typeof VMM.TextElement == 'undefined') {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-//--@codekit-prepend "VMM.ExternalAPI.js";
-//--@codekit-prepend "VMM.MediaElement.js";
-//--@codekit-prepend "VMM.MediaType.js";
-//--@codekit-prepend "VMM.TextElement.js";
+// @//codekit-prepend "VMM.ExternalAPI.js";
+// @//codekit-prepend "VMM.MediaElement.js";
+// @//codekit-prepend "VMM.MediaType.js";
+// @//codekit-prepend "VMM.TextElement.js";
 
 
 /* **********************************************
@@ -5060,7 +5062,7 @@ if(typeof VMM != 'undefined' && typeof VMM.DragSlider == 'undefined') {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-//--@codekit-append "VMM.Slider.Slide.js";
+// @//codekit-append "VMM.Slider.Slide.js";
 
 if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
     
@@ -5506,11 +5508,11 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
                 
                 mediasize.text_media.video =    VMM.Util.ratio.fit(mediasize.text_media.width, mediasize.text_media.height, 16, 9);
                 mediasize.media.video =         VMM.Util.ratio.fit(mediasize.media.width, mediasize.media.height, 16, 9);
-                
+
                 VMM.Lib.css(".slider-item .layout-text-media .text", "width", "100%" );
                 VMM.Lib.css(".slider-item .layout-text-media .text", "display", "block" );
-                //VMM.Lib.css(".slider-item .layout-text-media .text .container", "display", "block" );
-                //VMM.Lib.css(".slider-item .layout-text-media .text .container", "width", mediasize.media.width );
+                VMM.Lib.css(".slider-item .layout-text-media .text .container", "display", "block" );
+                VMM.Lib.css(".slider-item .layout-text-media .text .container", "width", mediasize.media.width );
                 VMM.Lib.css(".slider-item .layout-text-media .text .container .start", "width", "auto" );
                 
                 VMM.Lib.css(".slider-item .layout-text-media .media", "float", "none" );
@@ -5520,24 +5522,34 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
                 VMM.Lib.css(".slider-item .media blockquote p", "font-size", "16px" );
                 
                 VMM.Lib.css(".slider-item", "overflow-y", "auto" );
+
+                //hides timeline scale
+                //VMM.Lib.css(".vco-timeline .vco-navigation", "display", "none" );
+                //VMM.Lib.css(".vco-slider .slider-item", "height", "auto" );
+
+                //Hides the timeline scale
+                //VMM.Lib.css(".vco-slider .slider-container-mask","height","431px")
+                //VMM.Lib.css(".vco-timeline .vco-navigation","display","none")
+                //VMM.Lib.css(".storyjs-embed.full-embed","height","434px")
                 
                 
             } else {
                 
                 VMM.Lib.css(".slider-item .layout-text-media .text", "width", "40%" );
-               // VMM.Lib.css(".slider-item .layout-text-media .text", "display", "table-cell" );
-               // VMM.Lib.css(".slider-item .layout-text-media .text .container", "display", "table-cell" );
+                VMM.Lib.css(".slider-item .layout-text-media .text", "display", "table-cell" );
+                VMM.Lib.css(".slider-item .layout-text-media .text .container", "display", "table-cell" );
                 VMM.Lib.css(".slider-item .layout-text-media .text .container", "width", "auto" );
                 VMM.Lib.css(".slider-item .layout-text-media .text .container .start", "width", mediasize.text_media.text.width );
                 //VMM.Lib.addClass(".slider-item .content-container", "pad-left");
                 VMM.Lib.removeClass(".slider-item .content-container", "pad-top");
                 
                 VMM.Lib.css(".slider-item .layout-text-media .media", "float", "left" );
-                // Centers text when with a picture everett
                 //VMM.Lib.css(".slider-item .layout-text-media", "display", "table" );
+                
                 
                 VMM.Lib.css(".slider-item .media blockquote p", "line-height", "36px" );
                 VMM.Lib.css(".slider-item .media blockquote p", "font-size", "28px" );
+                
                 VMM.Lib.css(".slider-item", "display", "table" );
                 VMM.Lib.css(".slider-item", "overflow-y", "auto" );
             }
@@ -5790,11 +5802,13 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
             navigation.prevBtn = VMM.appendAndGetElement($slider, "<div>", "nav-previous");
             navigation.nextBtnContainer = VMM.appendAndGetElement(navigation.nextBtn, "<div>", "nav-container", temp_icon);
             navigation.prevBtnContainer = VMM.appendAndGetElement(navigation.prevBtn, "<div>", "nav-container", temp_icon);
-            // removes date from forward and backward buttons everett
-           /*if (config.type == "timeline") {
+            //Removes date heading
+            /*
+            if (config.type == "timeline") {
                 navigation.nextDate = VMM.appendAndGetElement(navigation.nextBtnContainer, "<div>", "date", "");
                 navigation.prevDate = VMM.appendAndGetElement(navigation.prevBtnContainer, "<div>", "date", "");
-            }*/
+            }
+            */
             navigation.nextTitle = VMM.appendAndGetElement(navigation.nextBtnContainer, "<div>", "title", "");
             navigation.prevTitle = VMM.appendAndGetElement(navigation.prevBtnContainer, "<div>", "title", "");
             
@@ -5840,7 +5854,6 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
                 // EXPLAINER
                 $explainer = VMM.appendAndGetElement($slider_mask, "<div>", "vco-feedback", "");
                 showMessege(null, "Swipe to Navigate");
-                VMM.Lib.height($explainer, config.slider.height);
                 VMM.bindEvent($explainer, onExplainerClick);
                 VMM.bindEvent($explainer, onExplainerClick, 'touchend');
             }
@@ -6057,11 +6070,9 @@ if (typeof VMM.Slider != 'undefined') {
             trace("BUILDSLIDE");
             $wrap   = VMM.appendAndGetElement(element, "<div>", "content");
             $slide  = VMM.appendAndGetElement($wrap, "<div>");
-            
+            //Remove dates from top header
             /* DATE
             ================================================== */
-            //Removes date header everett
-            
             // if (data.startdate != null && data.startdate != "") {
             //     if (type.of(data.startdate) == "date") {
             //         if (data.type != "start") {
@@ -6905,13 +6916,13 @@ Utf8.decode = function(strUtf) {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-//--@codekit-prepend "Core/VMM.Core.js";
-//--@codekit-prepend "Language/VMM.Language.js";
-//--@codekit-prepend "Media/VMM.Media.js";
-//--@codekit-prepend "Slider/VMM.DragSlider.js";
-//--@codekit-prepend "Slider/VMM.Slider.js";
-//--@codekit-prepend "Library/AES.js";
-//--@codekit-prepend "Library/bootstrap-tooltip.js";
+// @//codekit-prepend "Core/VMM.Core.js";
+// @//codekit-prepend "Language/VMM.Language.js";
+// @//codekit-prepend "Media/VMM.Media.js";
+// @//codekit-prepend "Slider/VMM.DragSlider.js";
+// @//codekit-prepend "Slider/VMM.Slider.js";
+// @//-prepend "Library/AES.js";
+// @//codekit-prepend "Library/bootstrap-tooltip.js";
 
 
 if(typeof VMM != 'undefined' && typeof VMM.StoryJS == 'undefined') {
@@ -6939,10 +6950,10 @@ if(typeof VMM != 'undefined' && typeof VMM.StoryJS == 'undefined') {
 /*  * CodeKit Import
     * http://incident57.com/codekit/
 ================================================== */
-//--@codekit-prepend "Core/VMM.StoryJS.js";
+// @//codekit-prepend "Core/VMM.StoryJS.js";
 
-//--@codekit-append "VMM.Timeline.TimeNav.js";
-//--@codekit-append "VMM.Timeline.DataObj.js";
+// @//codekit-append "VMM.Timeline.TimeNav.js";
+// @//codekit-append "VMM.Timeline.DataObj.js";
 
 
 /* Timeline
@@ -7119,17 +7130,15 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
             } else if (typeof conf == 'object') {
                 config = VMM.Util.mergeConfig(config, conf);
             }
-            is_small = false;
+            
             if (VMM.Browser.device == "mobile" || VMM.Browser.device == "tablet") {
                 config.touch = true;
-                is_small = true;
+                //removes nav height if its on a phone
+                config.nav.height           = 0;
+            }else{
+                 config.nav.height           = 200;
             }
             
-            config.nav.width            = config.width;
-            if(!is_small)//removes timenav height if device is tablet or phone everett
-                config.nav.height           = 200;
-            else
-                config.nav.height           = 0;
 
             config.feature.width        = config.width;
             config.feature.height       = config.height - config.nav.height;
@@ -7150,15 +7159,6 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
         ================================================== */
         function createStructure() {
             // CREATE DOM STRUCTURE
-            //Checks to see if its a mobile or desktop everett
-            var is_small = false;
-             if (VMM.Browser.device == "mobile" || VMM.Browser.device == "tablet") {
-                is_small = true;
-            }
-
-
-
-
             $timeline   = VMM.getElement(timeline_id);
             VMM.Lib.addClass($timeline, "vco-timeline");
             VMM.Lib.addClass($timeline, "vco-storyjs");
@@ -7166,8 +7166,9 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
             $container  = VMM.appendAndGetElement($timeline, "<div>", "vco-container vco-main");
             $feature    = VMM.appendAndGetElement($container, "<div>", "vco-feature");
             $slider     = VMM.appendAndGetElement($feature, "<div>", "vco-slider");
-            if(!is_small)//everett
+            if (VMM.Browser.device != "mobile") {//if on phone, removes timescale
                 $navigation = VMM.appendAndGetElement($container, "<div>", "vco-navigation");
+            }
             $feedback   = VMM.appendAndGetElement($timeline, "<div>", "vco-feedback", "");
             
             
@@ -7176,11 +7177,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
             }
             
             slider      = new VMM.Slider($slider, config);
-
-            if(!is_small) //Prevents  new timenav object from being created if on mobile everett
-                timenav     = new VMM.Timeline.TimeNav($navigation); //everett
-            else
-                timenav = null;
+            //remove timeline creation
+            timenav     = new VMM.Timeline.TimeNav($navigation);
             
             if (!has_width) {
                 config.width = VMM.Lib.width($timeline);
@@ -7227,8 +7225,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
             updateSize();
             
             slider.setSize(config.feature.width, config.feature.height);
-            if (timenav)
-                timenav.setSize(config.width, config.height);
+            timenav.setSize(config.width, config.height);
             if (orientationChange()) {
                 setViewport();
             }
@@ -7257,14 +7254,12 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
             is_moving = true;
             config.current_slide = slider.getCurrentNumber();
             setHash(config.current_slide);
-            if (timenav)
-                timenav.setMarker(config.current_slide, config.ease,config.duration);
+            timenav.setMarker(config.current_slide, config.ease,config.duration);
         };
         
         function onMarkerUpdate(e) {
             is_moving = true;
-            if (timenav)
-                config.current_slide = timenav.getCurrentNumber();
+            config.current_slide = timenav.getCurrentNumber();
             setHash(config.current_slide);
             slider.setSlide(config.current_slide);
         };
@@ -7273,8 +7268,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
             if (n <= _dates.length - 1 && n >= 0) {
                 config.current_slide = n;
                 slider.setSlide(config.current_slide);
-                if (timenav)
-                    timenav.setMarker(config.current_slide, config.ease,config.duration);
+                timenav.setMarker(config.current_slide, config.ease,config.duration);
             } 
         }
         
@@ -7397,8 +7391,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
             VMM.Timeline.DataObj.getData(_d);
             config.current_slide = 0;
             slider.setSlide(0);
-            if (timenav)
-                timenav.setMarker(0, config.ease,config.duration);
+            timenav.setMarker(0, config.ease,config.duration);
         };
         
         /* DATA 
@@ -7461,8 +7454,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
                 
                 // INITIALIZE COMPONENTS
                 slider.init(_dates);
-                if (timenav)
-                    timenav.init(_dates, data.era);
+                timenav.init(_dates, data.era);
             
                 // RESIZE EVENT LISTENERS
                 VMM.bindEvent(global, reSize, config.events.resize);
@@ -8912,13 +8904,12 @@ if(typeof VMM.Timeline != 'undefined' && typeof VMM.Timeline.TimeNav == 'undefin
             $timenav                    = VMM.appendAndGetElement(layout, "<div>", "timenav");
             $content                    = VMM.appendAndGetElement($timenav, "<div>", "content");
             $time                       = VMM.appendAndGetElement($timenav, "<div>", "time");
-            //Remove time interval from bottom of timeline everett
-            /*
-            $timeintervalminor          = VMM.appendAndGetElement($time, "<div>", "time-interval-minor");
-            $timeintervalminor_minor    = VMM.appendAndGetElement($timeintervalminor, "<div>", "minor");
-            $timeintervalmajor          = VMM.appendAndGetElement($time, "<div>", "time-interval-major");
-            $timeinterval               = VMM.appendAndGetElement($time, "<div>", "time-interval");
-            */
+
+            // removes time interval
+            //$timeintervalminor          = VMM.appendAndGetElement($time, "<div>", "time-interval-minor");
+            //$timeintervalminor_minor    = VMM.appendAndGetElement($timeintervalminor, "<div>", "minor");
+            //$timeintervalmajor          = VMM.appendAndGetElement($time, "<div>", "time-interval-major");
+            //$timeinterval               = VMM.appendAndGetElement($time, "<div>", "time-interval");
             $timebackground             = VMM.appendAndGetElement(layout, "<div>", "timenav-background");
             $timenavline                = VMM.appendAndGetElement($timebackground, "<div>", "timenav-line");
             $timenavindicator           = VMM.appendAndGetElement($timebackground, "<div>", "timenav-indicator");
