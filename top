@@ -1,0 +1,288 @@
+[33mcommit bb3e84673d8df1de24192d3bf5ec5f1b6a853e3d[m
+Merge: f3cdfb6 3ed249e
+Author: Rafael Flores <RafaelFloresjr@gmail.com>
+Date:   Tue Apr 22 20:54:28 2014 -0400
+
+    Merge pull request #157 from SUNY-Albany-CCI-INF362/gh-pages-Rafael-
+    
+    Questionnaire Flow works now!
+
+[33mcommit 3ed249e073e049ef898c1ae7ffe9cc5695b62c6f[m
+Author: Rafael Flores <RafaelFloresjr@gmail.com>
+Date:   Tue Apr 22 16:37:26 2014 -0400
+
+    Questionnaire Flow works now!
+    
+    - Added intro text
+    - Questionnaire now flows correctly
+    - Added reset button
+
+[33mcommit f3cdfb6d1542abc79db1b229816f1142fa231066[m
+Merge: 496af76 f5ee51d
+Author: kullah <ullah_kareem@yahoo.com>
+Date:   Mon Apr 21 19:38:07 2014 -0400
+
+    Merge pull request #154 from SUNY-Albany-CCI-INF362/master
+    
+    Accordion
+
+[33mcommit f5ee51d970e0c088f94fa02878f5cc2f414daa68[m
+Author: Kareem <ullah_kareem@yahoo.com>
+Date:   Mon Apr 21 19:37:22 2014 -0400
+
+    Accordion
+    
+    Fixing issues
+
+[33mcommit 496af76a1b0e31d175dddddefbfc0de5180f2478[m
+Merge: c989010 ed32920
+Author: kullah <ullah_kareem@yahoo.com>
+Date:   Mon Apr 21 17:36:45 2014 -0400
+
+    Merge pull request #152 from SUNY-Albany-CCI-INF362/master
+    
+    Accordion....
+
+[33mcommit ed3292096fa138e484885a227ad54587319b7e6c[m
+Merge: 8b68a17 dc4fa58
+Author: kullah <ullah_kareem@yahoo.com>
+Date:   Mon Apr 21 17:36:20 2014 -0400
+
+    Merge pull request #151 from SUNY-Albany-CCI-INF362/Foreclosure-Terms
+    
+    Foreclosure terms
+
+[33mcommit dc4fa5895f5933619f8317ea5b6df503f0fd2d43[m
+Author: Kareem <ullah_kareem@yahoo.com>
+Date:   Mon Apr 21 17:34:39 2014 -0400
+
+    Accordion...
+
+[33mcommit c9890101b150dd817e7065db0accad495bf58a26[m
+Merge: 9032223 8b68a17
+Author: Rafael Flores <RafaelFloresjr@gmail.com>
+Date:   Mon Apr 21 17:27:16 2014 -0400
+
+    Merge pull request #150 from SUNY-Albany-CCI-INF362/master
+    
+    Hid all the content but question 1
+
+[33mcommit 8b68a178035b45907184f4422a0b7412a436ea4a[m
+Merge: bba8a0b 813c0a3
+Author: Rafael Flores <RafaelFloresjr@gmail.com>
+Date:   Mon Apr 21 17:20:58 2014 -0400
+
+    Merge pull request #149 from SUNY-Albany-CCI-INF362/gh-pages-Rafael-
+    
+    Hid all the content but question 1
+
+[33mcommit 813c0a3906ab1a5b8102c66438cb5bc1bc259bd1[m
+Author: Rafael Flores <RafaelFloresjr@gmail.com>
+Date:   Mon Apr 21 17:19:20 2014 -0400
+
+    Hid all the content but question 1
+    
+    Hid all the content of the questionnaire page, except for question 1 and
+    introduction.
+
+[33mcommit 9032223118fabf43950263952895a1719c3ab388[m
+Merge: fccfa08 bba8a0b
+Author: kullah <ullah_kareem@yahoo.com>
+Date:   Mon Apr 21 17:16:08 2014 -0400
+
+    Merge pull request #148 from SUNY-Albany-CCI-INF362/master
+    
+    Accordion
+
+[33mcommit 03e0c0ba606815de28b6985abb2c09fae7783a56[m
+Merge: 543443a bba8a0b
+Author: kullah <ullah_kareem@yahoo.com>
+Date:   Mon Apr 21 17:11:30 2014 -0400
+
+    Merge pull request #145 from SUNY-Albany-CCI-INF362/master
+    
+    Merge pull request #144 from SUNY-Albany-CCI-INF362/Foreclosure-Terms
+
+[33mcommit bba8a0bda0b167cad604cb9d70ece28452ebb0f4[m
+Merge: 57bf22c 543443a
+Author: kullah <ullah_kareem@yahoo.com>
+Date:   Mon Apr 21 17:09:19 2014 -0400
+
+    Merge pull request #144 from SUNY-Albany-CCI-INF362/Foreclosure-Terms
+    
+    Accordion
+
+[33mcommit 543443a03e0647d3c1ff8f110530897ef08df1b1[m
+Author: Kareem <ullah_kareem@yahoo.com>
+Date:   Mon Apr 21 17:07:30 2014 -0400
+
+    Accordion
+    
+    show/hide terms
+
+[33mcommit fccfa087011325d5ba844ece0161b67a0372bc1f[m
+Merge: 98d0e8c 57bf22c
+Author: extremezoo <efranco@albany.edu>
+Date:   Fri Apr 18 16:02:36 2014 -0400
+
+    Merge pull request #139 from SUNY-Albany-CCI-INF362/master
+    
+    Adding timeline JS to website
+
+[33mcommit 57bf22c36de30cfbde4ef2fc0fdf9c720396e18f[m
+Author: extremezoo <efranco@albany.edu>
+Date:   Fri Apr 18 15:49:29 2014 -0400
+
+    Added back my JS files for timeline
+
+[33mcommit 26e60efd80d37db78df7e8a6c177e9b16fd9c577[m
+Merge: 555168b 9585a56
+Author: extremezoo <efranco@albany.edu>
+Date:   Fri Apr 18 15:19:53 2014 -0400
+
+    Merge pull request #138 from SUNY-Albany-CCI-INF362/timeline_edits_mobile_(4/14/14)
+    
+    Timeline edits mobile (4/14/14)
+
+[33mcommit 9585a568a7e50273806b114c7db647b75218c8b4[m
+Author: extremezoo <efranco@albany.edu>
+Date:   Fri Apr 18 15:15:53 2014 -0400
+
+    ok
+
+[33mcommit b199ee6800b461ce95c8a877724e5270ad671e91[m
+Author: extremezoo <efranco@albany.edu>
+Date:   Fri Apr 18 15:15:50 2014 -0400
+
+    ok
+
+[33mcommit b20e939dee25e8481fd6965fb8025097de4ccaee[m
+Author: extremezoo <efranco@albany.edu>
+Date:   Fri Apr 18 15:15:39 2014 -0400
+
+    ok
+
+[33mcommit a2b8dfd67224d5cc1c9c42a899b5a4ea11aa3030[m
+Author: extremezoo <efranco@albany.edu>
+Date:   Fri Apr 18 15:14:38 2014 -0400
+
+    nothing happened
+
+[33mcommit 555168bd4b6b3186b14d7e9c78ee56e42cddd83f[m
+Merge: a2929c4 98d0e8c
+Author: Rafael Flores <RafaelFloresjr@gmail.com>
+Date:   Fri Apr 18 12:10:49 2014 -0400
+
+    Merge pull request #135 from SUNY-Albany-CCI-INF362/gh-pages
+    
+    Added Questionnaire Page
+
+[33mcommit 98d0e8c3248ccc72ff70fd3cb3d9590b2dc04cfa[m
+Author: Rafael Flores <RafaelFloresjr@gmail.com>
+Date:   Fri Apr 18 11:57:55 2014 -0400
+
+    Added Questionnaire page and a few changes to Counseling Centers Table
+    
+    Counseling Center Page:
+    - Removed 'county' column
+    - Hid 'notes' column when viewed on mobile
+    - Attempt at a function when when viewed on mobile, when the address'
+    are clicked on, Google Maps opens.
+    
+    Main.css
+    - used '.mobile_hide' to hide certain features when viewed on mobile.
+    
+    index.html
+    - Added Questionnaire button.
+    
+    Smart Wizard
+    - Added Smart Wizard folder to assist with questionnaire page.
+    
+    Questionnaire.html
+    - Added a series of questions to help determine where a user is in the
+    foreclosure process.
+    - Not all the content is there but a general idea is.
+    - All the functions do not work correctly yet.
+    04/18/2014
+
+[33mcommit beb95a4023d26984c3eb4768f70fd259928cc3fa[m
+Merge: d373d94 a2929c4
+Author: kullah <ullah_kareem@yahoo.com>
+Date:   Thu Apr 17 22:30:29 2014 -0400
+
+    Merge pull request #133 from SUNY-Albany-CCI-INF362/master
+    
+    Click Function
+
+[33mcommit a2929c4b1954c74ff90725257d80b18416cbc8a7[m
+Merge: 6ed380d d373d94
+Author: kullah <ullah_kareem@yahoo.com>
+Date:   Thu Apr 17 22:28:59 2014 -0400
+
+    Merge pull request #132 from SUNY-Albany-CCI-INF362/gh-pages
+    
+    Merge pull request #130 from SUNY-Albany-CCI-INF362/master
+
+[33mcommit 6ed380dc768ad41879b8020d95a5e012b745338a[m
+Author: Kareem Ullah <ullah_kareem@yahoo.com>
+Date:   Thu Apr 17 22:27:04 2014 -0400
+
+    Click Function
+    
+    show/hide terms
+
+[33mcommit d373d94cf44316f02b301556cbc0d50cb08e6c9f[m
+Merge: 6b129a8 ec4bd7e
+Author: kullah <ullah_kareem@yahoo.com>
+Date:   Wed Apr 16 22:30:23 2014 -0400
+
+    Merge pull request #130 from SUNY-Albany-CCI-INF362/master
+    
+    Button
+
+[33mcommit ec4bd7ed6ddac8086129f97909fc7131379fb977[m
+Author: Kareem Ullah <ullah_kareem@yahoo.com>
+Date:   Wed Apr 16 22:28:04 2014 -0400
+
+    Button
+    
+    Show/hide terms
+
+[33mcommit 07096d759748e76de5800a36ee014ba78f4859db[m
+Merge: 2d2c57d 6b129a8
+Author: kullah <ullah_kareem@yahoo.com>
+Date:   Wed Apr 16 01:17:28 2014 -0400
+
+    Merge pull request #129 from SUNY-Albany-CCI-INF362/gh-pages
+    
+    Button
+
+[33mcommit 2d2c57df96edd377c107a05a1591eae1f0cd3778[m
+Author: Kareem Ullah <ullah_kareem@yahoo.com>
+Date:   Wed Apr 16 01:12:37 2014 -0400
+
+    Button
+    
+    To show/hide the term
+
+[33mcommit 6b129a8700a874ada4bc38685c1df09e69a4f277[m
+Merge: 45b0b18 3328af1
+Author: extremezoo <efranco@albany.edu>
+Date:   Tue Apr 15 17:01:21 2014 -0400
+
+    Merge pull request #128 from SUNY-Albany-CCI-INF362/master
+    
+    updating site
+
+[33mcommit 3328af1da4fc24ed4f1164f249732dca9afd37cc[m
+Merge: bbe49b2 b7ee0e6
+Author: extremezoo <efranco@albany.edu>
+Date:   Tue Apr 15 17:00:27 2014 -0400
+
+    Merge pull request #127 from SUNY-Albany-CCI-INF362/timeline_edits_mobile_(4/14/14)
+    
+    Made major changes to timeline
+
+[33mcommit b7ee0e692103b631710e35c49ee6cb62cf7a491b[m
+Author: extremezoo <efranco@albany.edu>
+Date:   Tue Apr 15 16:5
