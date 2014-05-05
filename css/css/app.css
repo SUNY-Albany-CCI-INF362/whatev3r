@@ -8806,6 +8806,31 @@ header a:hover, header a:active, header a:visited, .top-bar a:hover, .top-bar a:
   background: #e56d6d;
 }
 
+/*This controls the properties on the four navigation buttons.*/
+.form-button {
+  padding: 1em;
+}
+.form-button a:link, .form-button a:visited {
+  display: block;
+  font-weight: bold;
+  color: black;
+  background-color: #3aa6d0;
+  text-align: center;
+  padding: 0.05em;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  opacity: 0.9;
+  min-height: 50px;
+  padding: 1em;
+}
+.form-button a:hover, .form-button a:active {
+  background-color: #3aa6d0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  opacity: 1;
+}
+
 body {
   background-color: rgba(58, 166, 208, 0.4);
 }
