@@ -8764,8 +8764,6 @@ footer {
 }
 .nav-button a:link, .nav-button a:visited {
   display: block;
-  width: 90%;
-  min-height: 2.5em;
   font-weight: bold;
   color: black;
   background-color: #3aa6d0;
@@ -8774,11 +8772,13 @@ footer {
   text-decoration: none;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   border-radius: 7px;
+  opacity: 0.9;
 }
 .nav-button a:hover, .nav-button a:active {
   background-color: #3aa6d0;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
+  opacity: 1;
 }
 
 header, .top-bar {
